@@ -26,6 +26,29 @@ build_exe.bat
 dist\Myeongseong_Sequence_Material_Merge.exe
 ```
 
+
+## 협력사 다운로드 가이드
+
+협력사 PC에 Python이 설치되어 있다면 GitHub 저장소에서 아래 3개 파일만 다운로드해 같은 폴더에 저장합니다.
+
+- `app.py`
+- `requirements.txt`
+- `명성공업_서열정보_소요자재_자동취합.cmd`
+
+실행 방법:
+
+1. 위 3개 파일을 같은 폴더에 둡니다.
+2. `명성공업_서열정보_소요자재_자동취합.cmd`를 더블클릭합니다.
+3. 처음 실행 시 필요한 Python 패키지가 자동 설치됩니다.
+4. 프로그램 창이 열리면 HI-SRM에서 내려받은 엑셀 파일을 선택해 병합합니다.
+
+Python 설치가 어려운 PC에 배포하려면, 담당자가 먼저 `build_exe.bat`로 EXE를 생성한 뒤 아래 파일을 전달합니다.
+
+```text
+dist\Myeongseong_Sequence_Material_Merge.exe
+```
+
+EXE 배포 시 협력사는 Python 설치 없이 `Myeongseong_Sequence_Material_Merge.exe`만 실행하면 됩니다.
 ## 사용 순서
 
 1. 월확정서열 파일 4종 중 1개 이상을 선택합니다.
@@ -50,4 +73,5 @@ dist\Myeongseong_Sequence_Material_Merge.exe
 - 월확정 파일에는 `생산번호` 컬럼이 있어야 합니다.
 - 자재소요현황 파일에는 `물류번호` 컬럼이 있어야 합니다.
 - 동일 파일을 두 입력 영역에 중복 선택할 수 없습니다.
-- 기본 선택 컬럼은 아직 지정하지 않았으므로, 업로드 후 필요한 컬럼을 직접 선택해야 합니다.
+- 출력 컬럼은 기본 항목이 자동 선택되며, 필요 시 사용자가 추가 선택하거나 해제할 수 있습니다.
+
