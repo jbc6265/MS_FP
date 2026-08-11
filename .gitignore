@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Local validation data and generated outputs
+HI-SRM DATA/
+ascii_validation_input/
+validation_output/
+
+# Local validation/helper scripts
+validate_*.py
+_*.py
+
+# OS/editor
+.DS_Store
+Thumbs.db
